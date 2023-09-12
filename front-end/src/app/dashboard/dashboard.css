@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+:root {
+  --background-color: #151719;
+  --button-color: #cc9544;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f9980f; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #eb951c; 
+}
+
+.blogForm {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+

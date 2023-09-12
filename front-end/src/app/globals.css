@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+:root {
+  --background-color: #151719;
+  --button-color: #cc9544;
+  /* --button-color: #663f24; */
+}
+
+@font-face {
+  font-family: "Amita";
+  src: url(../../public/fonts/Amita/Amita-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Open_sans";
+  src: url(../../public/fonts/Open_Sans/static/OpenSans-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: "Open_regular";
+  src: url(../../public/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f9980f;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eb951c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
+  font-family: "Open_sans", sans-serif;
+}
+p {
+  color: #aaaaaa;
+}
+p {
+  font-family: "Open_regular", sans-serif;
+}
+.blog-container {
+  position: relative;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.blog-container:hover .image {
+  opacity: 0.3;
+}
+
+.blog-container:hover .middle {
+  opacity: 1;
+}
+body.active-modal {
+  overflow-y: hidden;
+}
+
+svg {
+  font-weight: bold;
+  max-width: 600px;
+  height: 100%;
+}
+/* ///progress */
+.progress-container {
+  width: 40%;
+  /* padding: 10px; */
+  /* background-color: #f5f5f5; */
+  border-radius: 5px;
+}
+
+/* Style the progress bar itself */
+progress {
+  width: 100%;
+  height: 12px;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
+
+/* Style the value text inside the progress bar */
+progress::-webkit-progress-value {
+  background-color: #ff9800;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Style the text inside the progress bar */
+progress::-webkit-progress-bar {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+#globalLoader {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.blogForm {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.shadow1 {
+  width: calc(100% - 256px);
+}
+.editorClassName {
+  background-color: white;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.wrapperClassName {
+  border-radius: 5px;
+}
