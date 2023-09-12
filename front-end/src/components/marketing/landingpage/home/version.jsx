@@ -4,13 +4,19 @@ const Version = () => {
   return (
     <section>
       <div className="max-w-[95%] mx-auto px-6">
-        <h2 className="text-6xl text-center py-20 text-white">The BitCafe</h2>
+        <h2 className="text-6xl text-center py-20 text-black">The BitCafe</h2>
         <div className="flex flex-col gap-y-52 py-20">
-          <div className="grid grid-cols-2">
-            <div className="col-span-1"></div>
+          <div className="grid grid-cols-2 items-center gap-x-6">
             <div className="col-span-1">
-              <h3 className="text-4xl text-justify text-white">The Lowdown:</h3>
-              <p className="text-4xl leading-normal">
+              <img
+                src="/coffee1.jpg"
+                className="w-full h-full rounded-md"
+                alt=""
+              />
+            </div>
+            <div className="col-span-1">
+              <h3 className="text-3xl text-black">The Lowdown:</h3>
+              <p className="text-2xl leading-normal">
                 Get ready for a steamy brew of finance, tech, and social
                 goodness, because were The BitCafe, your local not-for-profit
                 chill spot for tech innovation, a hub for hands-on learners,

@@ -16,10 +16,9 @@ import {
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 import Link from "next/link";
-import { ContextData } from "../../context/contextApp";
 import { MdTroubleshoot } from "react-icons/md";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import Checkout from "../shop/checkout/checkout";
+import { ContextData } from "@/components/context/contextApp";
 
 export default function Navbar() {
   const { getCardData } = useContext(ContextData);
